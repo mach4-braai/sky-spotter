@@ -1,0 +1,14 @@
+[tools]
+node = "22"
+
+[tasks.dev]
+description = "Start Expo dev server"
+run = "npx expo start"
+
+[tasks."dev:web"]
+description = "Start Expo web + CORS proxy"
+run = "npm run proxy & npx expo start --web"
+
+[tasks.setup]
+description = "Install all dependencies"
+run = "npm install"
